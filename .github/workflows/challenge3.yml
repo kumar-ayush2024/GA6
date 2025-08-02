@@ -1,0 +1,19 @@
+name: Challenge 3
+on: [push]
+env:
+  ARTIFACT_ENV: "tools-website"
+jobs:
+  caua:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: Checkout
+         uses: actions/checkout@v2
+         with:
+           name: I-shie/Tools-Website
+           ref: main
+           path: ./${{env.ARTIFACT_ENV}}
+      - name: Upload 
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{env.ARTIFACT_ENV}}
+          path: ./${{env.ARTIFACT_ENV}}
