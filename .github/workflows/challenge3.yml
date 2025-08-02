@@ -12,6 +12,8 @@ jobs:
            repository: I-shie/Tools-Website
            ref: main
            path: ./${{env.ARTIFACT_ENV}}
+      -  name: Checking Directory
+         run: ls ./${{env.ARTIFACT_ENV}} -l
       - name: Upload 
         uses: actions/upload-artifact@4.0.0
         with:
