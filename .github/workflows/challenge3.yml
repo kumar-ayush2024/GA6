@@ -9,7 +9,7 @@ jobs:
       -  name: Checkout
          uses: actions/checkout@v2
          with:
-           name: I-shie/Tools-Website
+           repository: I-shie/Tools-Website
            ref: main
            path: ./${{env.ARTIFACT_ENV}}
       - name: Upload 
