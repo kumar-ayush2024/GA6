@@ -1,4 +1,4 @@
-name: Challenge 3
+name: CI Status
 on: [push]
 env:
   ARTIFACT_ENV: "tools-website"
