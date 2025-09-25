@@ -10,16 +10,16 @@ jobs:
          uses: actions/checkout@v2
          with:
            repository: I-shie/Tools-Website
-           ref: main
-           path: ./${{env.ARTIFACT_ENV}}
-      -  name: Checking Directory
-         run: ls ./${{env.ARTIFACT_ENV}} -l
-      - name: Upload Artifact
-        uses: actions/upload-artifact@4.0.0
-        with:
-          name: ${{env.ARTIFACT_ENV}}
-          path: ./${{env.ARTIFACT_ENV}}
-      - name: Download Artifact
-        uses: actions/download-artifact@4.0.0
-        with:
-          name: ${{env.ARTIFACT_ENV}}
+      #      ref: main
+      #      path: ./${{env.ARTIFACT_ENV}}
+      # -  name: Checking Directory
+      #    run: ls ./${{env.ARTIFACT_ENV}} -l
+      # - name: Upload Artifact
+      #   uses: actions/upload-artifact@4.0.0
+      #   with:
+      #     name: ${{env.ARTIFACT_ENV}}
+      #     path: ./${{env.ARTIFACT_ENV}}
+      # - name: Download Artifact
+      #   uses: actions/download-artifact@4.0.0
+      #   with:
+      #     name: ${{env.ARTIFACT_ENV}}
